@@ -89,6 +89,8 @@ For me the be able to add you to the repository, you will need a
 needs, choose the free option as we will not be needing the features
 offered in those plans.)
 
+.. _GitHub user account: http://github.com/plans
+
 SSH
 ---
 
@@ -149,3 +151,4 @@ top right corner. Under the "Account Overview" tab, click
 "SSH Public Keys" and then "Add a public key." Ignore the title field
 that appears, copy the gibberish from ``id_rsa.pub`` into the
 "Key" field and press "Add key."
+
