@@ -229,6 +229,28 @@ fine. To get to these files, under the **Repository** menu again, choose
 out of the repository into the directory structure. It may be an old
 version, or the current version with or without changes.
 
+Since you have the working directory open, open up the ``README.rst``
+file. We're going to change it. Just write in it. Anything is fine, and
+save the file. (To keep git sane, make sure there is exactly one blank
+line at the end files when you are done editing.)
+
+Switch back to Git GUI and hit the "Rescan" button. You'll see
+``README.rst`` now appears in the "Unstaged Changes" pane. Select it
+and a diff (machine-readable list of differences) similar to what you
+saw in the history appears in the "Modified, not staged" pane.
+
+Lets get these changes checked in.
+
+Click the icon next to ``README.rst`` in "Unstaged" and it will jump to
+"Staged Changes." Select it again and the diff is now labeled "Staged
+for commit." Type a descriptive message in the Commit Message text
+area--"Tutorial commit" will work here--and click "Commit."
+
+The interface will now revert to the boring blank view. No changes.
+Open up history and take a look at your work. Now you'll see that
+``master`` is your commit, and the remote branch ``origin/master`` is
+still on it's last commit.
+
 ..  The github repository for the class project will be
     https://github.com/Artanis/CSC220-Class-Project (since this is a
     private repository you will not be able to view this until a few
