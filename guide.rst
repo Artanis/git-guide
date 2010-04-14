@@ -68,3 +68,23 @@ just close out the installer.
 .. _msysgit: http://code.google.com/p/msysgit/
 
 .. _Git-1.7.0.2-preview20100309: http://msysgit.googlecode.com/files/Git-1.7.0.2-preview20100309.exe
+
+------
+GitHub
+------
+Once the local software is installed, the second step is to get the
+code we are going to be working on, but we have some pre-requisites: the
+service I am using to host the code is protecting the repository, so we
+need to get in to that system first.
+
+.. note::
+    
+    GitHub is an external service that hosts git repositories. You do
+    not need a GitHub account to use git itself, or even public
+    repositories hosted on GitHub, you only need a GitHub account to be
+    able to access the private repositories hosted there.
+
+For me the be able to add you to the repository, you will need a
+`GitHub user account`_ (there are several pay options offered for larger
+needs, choose the free option as we will not be needing the features
+offered in those plans.)
