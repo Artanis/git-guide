@@ -25,6 +25,12 @@ work through the graphic interface provided by msysgit.
 At the time of writing the latest release of msysgit was
 `Git-1.7.0.2-preview20100309`_, so download that and run it.
 
+.. figure:: images/install-welcome.png
+    :width: 450
+    :alt: Welcome Screen
+    
+    MSysGit installer
+
 After the Welcome Screen, you'll be asked to read the GNU public
 license, which msysgit is licensed under. You don't have to agree to it
 to use the application, only if you are redistributing or altering the
@@ -33,6 +39,15 @@ application.
 The next screen is a standard install location. It is recommended to
 leave this on the default value (``Program Files/Git``) unless you have
 another install location.
+
+.. figure:: images/install-options.png
+    :width: 450
+    :alt: Install Options screen
+    
+    Install options
+    
+    Icons, Explorer integration, command-line fonts and config file
+    association
 
 Next is an install options screen. You have the option of not placing
 new icons on your desktop and in the quick launch menu on the taskbar,
@@ -48,10 +63,26 @@ The next screen asks where or if you'd like to install a Start Menu
 entry. As this guide will assume you can access the application through
 the Start Menu, please allow it to do so.
 
+.. figure:: images/install-env-PATH.png
+    :width: 450
+    :alt: PATH environment options screen
+    
+    Configuration options
+    
+    How the PATH environment variable should be handled.
+
 The next screen asks you about the PATH environment variable, which
 tells the operating system where to find utility programs. I highly
 recommend selecting the "Use Git Bash only" option, which makes no
 changes to the PATH variable.
+
+.. figure:: images/install-lineends.png
+    :width: 450
+    :alt: Line-end option screen
+    
+    Configuration options
+    
+    How line-ends should be handled.
 
 The final screen asks about line-ending characters. On Unix-like systems
 the line-ending character is a single new-line character (``\n``), while
@@ -105,6 +136,12 @@ The easiest way to get an SSH key is through the Git Bash command-line.
 Open Git Bash with **Start > Git > Git Bash**.
 
 Bold text is what you'll need to type here.
+
+.. figure:: images/git-bash.png
+    :width: 450
+    :alt: Git Bash
+    
+    Git Bash command-line shell.
 
 .. parsed-literal::
     
@@ -180,6 +217,12 @@ But what you want this stuff on your machine. That's the point, right?
 Close out Git Bash and ``id_rsa.pub`` if you haven't already, and open
 Git GUI. **Start Menu > Git > Git GUI**.
 
+.. figure:: images/msysgit.png
+    :width: 450
+    :alt: msysgit home screen
+    
+    MSysGit
+
 You'll see a window that offers three links:
 
 * **Create a New Repository**, a new blank repository.
@@ -188,6 +231,11 @@ You'll see a window that offers three links:
 
 Since we are getting an existing repository, and we don't have it yet
 to open it, choose to clone an existing repository.
+
+.. figure:: images/msysgit-clone.png
+    :width: 450
+    
+    MSysGit clone.
 
 In the "Source Location" text box, enter
 ``git://github.com/Artanis/git-guide.git``, the url of the actual
@@ -202,6 +250,11 @@ application. It is important to know that Git GUI is not a code editor
 or IDE. Its sole purpose is to manage the git repository. The various
 panes only show anything when files have changed, so it looks pretty
 bare right now.
+
+.. figure:: images/msysgit-repo.png
+    :width: 450
+    
+    A repository with no changes in it.
 
 Once you clone a repository, you have the most recent changes, so
 there's not much to do besides look at the repository history, edit
@@ -229,6 +282,21 @@ put them in your ``master`` branch. It's unlikely with this example
 repository, but when there are changes you go over to **Merge** and
 choose **Local Merge**. All goes well, you'll have a success message and
 the changes will now be in your ``master`` branch.
+
+.. figure:: images/msysgit-fetch.png
+    :width: 450
+    
+    Fetching changes.
+
+.. figure:: images/msysgit-merge.png
+    :width: 450
+    
+    Merging changes.
+
+.. figure:: images/msysgit-merge2.png
+    :width: 450
+    
+    Merging changes.
 
 Making Changes
 ~~~~~~~~~~~~~~
