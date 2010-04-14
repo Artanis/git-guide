@@ -206,10 +206,18 @@ get changes.
 
 The most interesting one for this repository is going to be the history.
 Under **Repository** choose **Visualize master's History**. ``master``
-is the current *branch* of the repository, and by default it tracks
-*origin*, the remote repository's (at GitHub) ``master`` branch. Feel
-free to explore the history for a bit. Changes in lines are marked by
-``+`` for additions, and ``-`` for deletions.
+is the current *branch* of the repository. Feel free to explore the
+history for a bit. Changes in lines are marked by ``+`` for additions,
+and ``-`` for deletions.
+
+To check for changes, go to the **Remote** menu. Look under **Fetch**
+and you'll see that the ``origin`` remote-branch is listed, the remote
+repository's (at GitHub) ``master`` branch. When you select a remote
+branch from Fetch, Git fetches all the changes (if any) from that
+remote much like a mail client grabs new emails. What it doesn't do is
+put them in your ``master`` branch. It's unlikely with this example
+repository, but when there are changes you go over to **Merge** and
+choose **Local Merge**.
 
 Since Git GUI does not edit files, to edit files they need to be opened
 in another application. Whatever you use to edit files of that type is
