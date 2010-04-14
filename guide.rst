@@ -1,6 +1,6 @@
-==========================
-git Source Code Management
-==========================
+================================
+git Source Code Management Guide
+================================
 This guide will cover installing git on Windows systems with msysgit,
 setting up a GitHub.com account for remote code hosting and
 collaboration, and allowing git to connect to GitHub for pushing and
