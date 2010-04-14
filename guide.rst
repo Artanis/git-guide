@@ -88,3 +88,64 @@ For me the be able to add you to the repository, you will need a
 `GitHub user account`_ (there are several pay options offered for larger
 needs, choose the free option as we will not be needing the features
 offered in those plans.)
+
+SSH
+---
+
+Github has two methods of user authorization, a standard user/pass
+combination for the website, and an SSH (Secure SHell) key for
+authorizing git transactions.
+
+The easiest way to get an SSH key is through the Git Bash command-line.
+
+Open Git Bash with **Start > Git > Git Bash**.
+
+Bold text is what you'll need to type here.
+
+.. parsed-literal::
+    
+    Welcome to Git (version 1.7.0.2-preview20100309)
+    
+    Run 'git help git' to display the help index.
+    Run 'git help <command>' to display help for specific commands.
+    
+    user@windows ~
+    $ **ssh-keygen -t rsa "user@example.com"**
+    Generating public/private rsa key pair.
+    Enter file in which to save the key (/c/Documents and Settings/user/.ssh/id_rsa):
+
+In place of ``user@example.com`` use your own email address. If you
+would rather not put your email address here use ``ssh-keygen -t rsa``
+instead and ssh-keygen will use your login and machine name.
+
+Leave the filename blank to just use the default file (``.ssh/id_rsa``
+in your home folder.)
+
+.. parsed-literal::
+    
+    Created directory '/c/Documents and Settings/user/.ssh/'.
+    Enter passphrase (empty for no passphrase):
+
+Enter a passphrase to protect your SSH key with (you may leave this
+blank.) You will need this passphrase to unlock the SSH key when you
+use it.
+
+ssh-keygen will tell you where it saved the id_rsa and id_rsa.pub
+files, and the fingerprint of the key.
+
+At this point you need to open the ``id_rsa.pub`` file, because we need
+the data inside. So go to ``C:\Documents and Settings\`` and click on
+your user name (it will be the same name in the place of ``user``
+above.) Open the ``.ssh`` folder and open ``id_rsa.pub`` with Notepad.
+You should see a lot of random numbers and letters. Make sure you have
+``id_rsa.pub`` and not ``id_rsa``.
+
+This is the public version of your new ssh key, used to validate data
+signed by the private key (``id_rsa``,) and GitHub will need this to
+authenticate your git transactions.
+
+If you aren't, log in to GitHub and click on "Account Settings" in the
+top right corner. Under the "Account Overview" tab, click
+"SSH Public Keys" and then "Add a public key." Ignore the title field
+that appears, copy the gibberish from ``id_rsa.pub`` into the
+"Key" field and press "Add key."
