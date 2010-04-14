@@ -193,7 +193,30 @@ an existing folder, so it is imperative that the folder not exist prior.
 Once you have a destination for the code, click "Clone." A few screens
 will flicker by quickly, and then you will have the main Git GUI
 application. It is important to know that Git GUI is not a code editor
-or IDE. Its sole purpose is to manage the git repository.
+or IDE. Its sole purpose is to manage the git repository. The various
+panes only show anything when files have changed, so it looks pretty
+bare right now.
+
+Once you clone a repository, you have the most recent changes, so
+there's not much to do besides look at the repository history, edit
+files, or wait for new changes.
+
+On those notes, we have three tasks: show repo history, edit files, and
+get changes.
+
+The most interesting one for this repository is going to be the history.
+Under **Repository** choose **Visualize master's History**. ``master``
+is the current *branch* of the repository, and by default it tracks
+*origin*, the remote repository's (at GitHub) ``master`` branch. Feel
+free to explore the history for a bit. Changes in lines are marked by
+``+`` for additions, and ``-`` for deletions.
+
+Since Git GUI does not edit files, to edit files they need to be opened
+in another application. Whatever you use to edit files of that type is
+fine. To get to these files, under the **Repository** menu again, choose
+**Explore Working Copy**. The working copy is the code that is checked
+out of the repository into the directory structure. It may be an old
+version, or the current version with or without changes.
 
 ..  The github repository for the class project will be
     https://github.com/Artanis/CSC220-Class-Project (since this is a
