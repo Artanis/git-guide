@@ -39,8 +39,10 @@ new icons on your desktop and in the quick launch menu on the taskbar,
 which I leave to your preference. The second option group, Windows
 Explorer Integration, offers to either add context menu entries (one
 that opens a unix command line in the current folder, and another that
-opens the graphical interface,) or to install git-cheetah (a
-TortoiseSVN clone.) I recommend leaving the bottom two options alone.
+opens the graphical interface,) or to install git-cheetah (an in
+progress TortoiseSVN clone for git.) Choose the context menu options
+instead of git-cheetah for now. The last two options I recommend
+leaving alone.
 
 The next screen asks where or if you'd like to install a Start Menu
 entry. As this guide will assume you can access the application through
