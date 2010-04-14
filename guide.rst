@@ -219,7 +219,8 @@ branch from Fetch, Git fetches all the changes (if any) from that
 remote much like a mail client grabs new emails. What it doesn't do is
 put them in your ``master`` branch. It's unlikely with this example
 repository, but when there are changes you go over to **Merge** and
-choose **Local Merge**.
+choose **Local Merge**. All goes well, you'll have a success message and
+the changes will now be in your ``master`` branch.
 
 Since Git GUI does not edit files, to edit files they need to be opened
 in another application. Whatever you use to edit files of that type is
