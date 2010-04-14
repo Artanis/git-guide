@@ -251,8 +251,10 @@ Open up history and take a look at your work. Now you'll see that
 ``master`` is your commit, and the remote branch ``origin/master`` is
 still on it's last commit.
 
+Since you don't have push access to this example repo, it's kind of
+hard to tutorial that part.
+
 ..  The github repository for the class project will be
     https://github.com/Artanis/CSC220-Class-Project (since this is a
     private repository you will not be able to view this until a few
     steps in.)
-
