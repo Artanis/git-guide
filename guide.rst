@@ -252,7 +252,17 @@ Open up history and take a look at your work. Now you'll see that
 still on it's last commit.
 
 Since you don't have push access to this example repo, it's kind of
-hard to tutorial that part.
+hard to tutorial that part, but here's how it works.
+
+Once you have commits that you want to put on the server, press the
+"Push" button below "Commit." A window will appear allowing you to
+select a source branch (usually ``master``,) and a remote (in this case,
+``origin``.) Pressing "Push" there will establish a connection with
+GitHub (you'll be asked to confirm the rsa fingerprint, which should be
+``16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48``,) and to unlock your
+``id_rsa`` ssh key with the passphrase. Once you do that, git
+establishes an authenticated connection with GitHub and sends all the
+changes on the selected branch to the remote repository.
 
 ..  The github repository for the class project will be
     https://github.com/Artanis/CSC220-Class-Project (since this is a
