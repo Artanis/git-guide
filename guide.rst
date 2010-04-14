@@ -164,6 +164,8 @@ This step may take a while if you do this while I am not available.
 Since we have all the pieces needed to use git with GitHub, in the mean
 time I will run a small tutorial.
 
+Example Repository: git-guide
+-----------------------------
 I have hosted this very document on GitHub in a public repository, so
 first take a look at what is there: head over to
 http://github.com/Artanis/git-guide. I'll leave it to you to explore
@@ -171,6 +173,8 @@ the site itself (if you have questions post them.) You'll see there's a
 few files there, as well as the last commit that was pushed here, and
 some other things.
 
+Cloning a repository
+~~~~~~~~~~~~~~~~~~~~
 But what you want this stuff on your machine. That's the point, right?
 
 Close out Git Bash and ``id_rsa.pub`` if you haven't already, and open
@@ -206,12 +210,16 @@ files, or wait for new changes.
 On those notes, we have three tasks: show repo history, edit files, and
 get changes.
 
+Repository History
+~~~~~~~~~~~~~~~~~~
 The most interesting one for this repository is going to be the history.
 Under **Repository** choose **Visualize master's History**. ``master``
 is the current *branch* of the repository. Feel free to explore the
 history for a bit. Changes in lines are marked by ``+`` for additions,
 and ``-`` for deletions.
 
+Pulling and Merging Changes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To check for changes, go to the **Remote** menu. Look under **Fetch**
 and you'll see that the ``origin`` remote-branch is listed, the remote
 repository's (at GitHub) ``master`` branch. When you select a remote
@@ -222,6 +230,8 @@ repository, but when there are changes you go over to **Merge** and
 choose **Local Merge**. All goes well, you'll have a success message and
 the changes will now be in your ``master`` branch.
 
+Making Changes
+~~~~~~~~~~~~~~
 Since Git GUI does not edit files, to edit files they need to be opened
 in another application. Whatever you use to edit files of that type is
 fine. To get to these files, under the **Repository** menu again, choose
@@ -241,6 +251,8 @@ saw in the history appears in the "Modified, not staged" pane.
 
 Lets get these changes checked in.
 
+Creating a Commit
+~~~~~~~~~~~~~~~~~
 Click the icon next to ``README.rst`` in "Unstaged" and it will jump to
 "Staged Changes." Select it again and the diff is now labeled "Staged
 for commit." Type a descriptive message in the Commit Message text
@@ -251,6 +263,8 @@ Open up history and take a look at your work. Now you'll see that
 ``master`` is your commit, and the remote branch ``origin/master`` is
 still on it's last commit.
 
+Pushing Changes
+~~~~~~~~~~~~~~~
 Since you don't have push access to this example repo, it's kind of
 hard to tutorial that part, but here's how it works.
 
@@ -268,3 +282,4 @@ changes on the selected branch to the remote repository.
     https://github.com/Artanis/CSC220-Class-Project (since this is a
     private repository you will not be able to view this until a few
     steps in.)
+
