@@ -152,3 +152,51 @@ top right corner. Under the "Account Overview" tab, click
 that appears, copy the gibberish from ``id_rsa.pub`` into the
 "Key" field and press "Add key."
 
+-------------------------------------------
+Working with git and GitHub through msysgit
+-------------------------------------------
+Once all that is done, send me a message with your GitHub user name and
+I will add you to the class project repository.
+
+This step may take a while if you do this while I am not available.
+Since we have all the pieces needed to use git with GitHub, in the mean
+time I will run a small tutorial.
+
+I have hosted this very document on GitHub in a public repository, so
+first take a look at what is there: head over to
+http://github.com/Artanis/git-guide. I'll leave it to you to explore
+the site itself (if you have questions post them.) You'll see there's a
+few files there, as well as the last commit that was pushed here, and
+some other things.
+
+But what you want this stuff on your machine. That's the point, right?
+
+Close out Git Bash and ``id_rsa.pub`` if you haven't already, and open
+Git GUI. **Start Menu > Git > Git GUI**.
+
+You'll see a window that offers three links:
+
+* **Create a New Repository**, a new blank repository.
+* **Clone and Existing Repository**, copy an existing repository
+* **Open Existing Repository**
+
+Since we are getting an existing repository, and we don't have it yet
+to open it, choose to clone an existing repository.
+
+In the "Source Location" text box, enter
+``git://github.com/Artanis/git-guide.git``, the url of the actual
+repository. In the "Target Directory" text box, browse for a place
+you'll remember, like "My Documents," and rather counter-intuitively
+type ``git-guide`` the name of repository. Msysgit will not clone into
+an existing folder, so it is imperative that the folder not exist prior.
+
+Once you have a destination for the code, click "Clone." A few screens
+will flicker by quickly, and then you will have the main Git GUI
+application. It is important to know that Git GUI is not a code editor
+or IDE. Its sole purpose is to manage the git repository.
+
+..  The github repository for the class project will be
+    https://github.com/Artanis/CSC220-Class-Project (since this is a
+    private repository you will not be able to view this until a few
+    steps in.)
+
